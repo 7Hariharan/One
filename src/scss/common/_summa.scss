@@ -1,0 +1,209 @@
+.zpl_mdl {
+    right: -40px !important;
+}
+
+.zpl_mdlbdy:before {
+    display: none;
+}
+
+.zpl_quck {
+    position: fixed;
+    top: 50px;
+    right: 180px;
+    width: 760px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+    border-radius: 3px;
+    .zpl_search {
+        width: 100%;
+        max-width: unset;
+        margin-bottom: 26px;
+        background: #fff;
+        border: 1px solid #f1f1f1;
+        box-shadow: none;
+        input {
+            padding: 15px 20px;
+        }
+        &:hover {
+            box-shadow: none;
+        }
+    }
+    font {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        ul {
+            width: 30%;
+            li {
+                margin: 0 0 14px;
+                &:last-child {
+                    margin: 0;
+                }
+                p {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color: #073fa6;
+                    padding-bottom: 5px;
+                    display: flex;
+                    span {
+                        display: block;
+                        display: block;
+                        height: 20px;
+                        width: 23px;
+                        margin-right: 4px;
+                    }
+                }
+                a {
+                    color: #444;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+.zpl_rgtcnt {
+    .tab-pane {
+        >li {
+            >a {
+                font-size: 13px;
+                padding: 9px 15px;
+            }
+        }
+        .PI_more {
+            margin-left: 16px;
+        }
+    }
+}
+
+.zpl_container,
+.zpl_iwrprrgt>div {
+    padding: 0 !important;
+}
+
+.mangvw,
+.admnvw {
+    display: none;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.mang {
+    .mangvw {
+        pointer-events: unset;
+        visibility: visible;
+        display: block;
+    }
+}
+
+.admn {
+    .mangvw,
+    .admnvw {
+        pointer-events: unset;
+        visibility: visible;
+        display: block;
+    }
+}
+
+.custmvw {
+    display: none !important;
+}
+
+.custm {
+    .custmvw {
+        display: flex !important;
+    }
+}
+
+.zpl_frmmove {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    bottom: 0;
+    width: 400px;
+    background: #fff;
+    border-radius: 8px;
+    .zpl_frmhead {
+        padding: 24px 20px 10px !important;
+    }
+    .zpl_frmservices {
+        .zpl_frmout {
+            background-color: transparent !important;
+        }
+        .zpl_ssearch {
+            background-color: transparent !important;
+        }
+        .zpl_drpopen {
+            &:before {
+                display: none;
+            }
+        }
+        ul>li>div {
+            padding-left: 0 !important;
+        }
+    }
+}
+
+.notfiy {
+    background-color: #ff2727;
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    &.numb {
+        height: unset;
+        width: unset;
+        padding: 5px;
+        border-radius: 50px;
+        /* min-width: 14px; */
+        color: #fff;
+        font-size: 10px;
+        line-height: 5px;
+        top: -1px !important;
+        right: 0px !important;
+    }
+}
+
+.zpl_lmnulst {
+    >div {
+        position: relative;
+    }
+    .notfiy {
+        top: 7px;
+        right: 22px;
+    }
+}
+
+.tab-pane {
+    .notfiy {
+        top: 6px;
+        right: 5px;
+    }
+}
+
+.zpl_rgtcnt {
+    .notfiy {
+        top: 3px;
+    }
+}
+
+.plus {
+    color: red !important;
+}
+
+.zpl_header .zpl_mnLgo {
+    width: 30px;
+    margin: 14px 22px 0;
+}
+
+.PI_quick_action:before {
+    color: #0088FF !important;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 28px;
+}
