@@ -21,8 +21,22 @@ var secnav = function(element, obj) {
     $(obj).addClass('active');
 }
 
+var actn = function() {
+    $(".zpl_cvrblck").toggleClass("DNI");
+    $(".zpl_actn").toggleClass("DNI");
+    // $(".zpl_quck").toggleClass("DNI");
+}
 var quckact = function() {
+    $(".zpl_actn").toggleClass("DNI");
     $(".zpl_quck").toggleClass("DNI");
+}
+
+var custom = function() {
+    $("body").toggleClass("custom");
+}
+
+var plus = function() {
+    $("body").toggleClass("plusvw");
 }
 
 $(document).ready(function() {
@@ -56,6 +70,10 @@ $(document).ready(function() {
     // alert(tab)
 
 });
+
+var todo = function() {
+    $(".todos").toggleClass("DNI");
+}
 
 $(document).ready(function() {
     // Aplly Leave
@@ -138,6 +156,9 @@ $(document).keyup(function(e) {
         $(".zpl_Lbx").addClass("DNI");
         $('.zpl_mdl').removeClass('zpl_mopen');
         $("body").removeClass("zpl_mdlbdy")
+        $(".zpl_actn").addClass("DNI");
+        $(".zpl_quck").addClass("DNI");
+        $(".zpl_cvrblck").addClass("DNI");
     }
 });
 
@@ -176,6 +197,10 @@ var showtabs = function(element, obj) {
     $('#' + element).removeClass('DN');
     $('#' + element).closest('.zpl_outer').find('.zpl_topmnu>.tab-pane li').removeClass('zpl_act');
     $(obj).parent('li').addClass('zpl_act');
+    // if (element == "todotop_team" || "todotop_me" || "todotop_org") {
+    //     alert("1")
+    //     $(".zpl_container#home_todos").removeClass("DN");
+    // }
 }
 
 var manager = function(get) {

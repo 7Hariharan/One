@@ -22,7 +22,7 @@
             <li class="tooltip-js" data-title-position="bottom" title="Applications"><i class="PI_app"></i></li>
         </ul>
     </div> --}}
-    <div class="zpl_rProf">
+     <div class="zpl_rProf">
         {{!-- <div class="zpl_glsrch">
             <div data-popup-open="zpl_glsrch"> 
                 <i class="PI_lens"></i>
@@ -31,21 +31,20 @@
         </div> --}}
         <ul class="zpl_rnav">
             <!-- <li onclick="moduswtch('settings')" class="tooltip-js" data-title-position="bottom" title="Settings"><i class="PI_setting"></i></li> -->
-            {{!-- <li class="tooltip-js" data-title-position="bottom" title="manager" onclick="manager(this)"><i class="PI_user"></i></li>
-            <li class="tooltip-js" data-title-position="bottom" title="admin" onclick="admin(this)"><i class="PI_promo"></i></li> --}}
-            {{!-- <div class="zpl_glsrch">
+            <li class="tooltip-js" data-title-position="bottom" title="Quick actions" onclick="actn()"><i class="PI_quick_action fil"></i></li>
+            {{!-- <li class="tooltip-js" data-title-position="bottom" title="manager" onclick="manager(this)"><i class="PI_user"></i></li> --}}
+            {{!-- <li class="tooltip-js" data-title-position="bottom" title="admin" onclick="admin(this)"><i class="PI_promo"></i></li> --}}
+            <div class="zpl_glsrch">
                         <div data-popup-open="zpl_glsrch">
                             <i class="PI_lens"></i>
                             <input placeholder="Search Across Zoho People" type="text">
                         </div>
-                    </div> --}}
-            <li class="tooltip-js" data-title-position="bottom" title="Quick actions" onclick="quckact()"><i class="PI_quick_action fil"></i></li>
-            <li class="tooltip-js" data-title-position="bottom" title="Search" onclick="manager(this)"><i class="PI_lens"></i></li>
-            <li class="tooltip-js" data-title-position="bottom" title="Notification"><i class="PI_notify"></i></li>
-            <li class="zpl_Nvpicimg"> <div class="zpl_Nvpic"><img src="../../images/tony.jpg"></div></li>
+                    </div>
+            <li class="zpl_Nvpicimg" onclick="todo()"> <div class="zpl_Nvpic"><img src="../../images/tony.jpg"></div></li>
+            <li class="tooltip-js" data-title-position="bottom" title="Notifications"><i class="PI_notify"></i></li>
         </ul>
         <ul class="zpl_rnav">
-            <li class="tooltip-js" data-title-position="bottom" title="Applications"><i class="PI_app"></i></li>
+            <li class="tooltip-js" data-title-position="bottom" title="Applications" onclick="custom()"><i class="PI_app"></i></li>
         </ul>
     </div>
 </div>

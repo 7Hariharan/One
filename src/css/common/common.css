@@ -2252,6 +2252,76 @@ input[disabled] { cursor: not-allowed; }
 
 .zpl_rgtcnt .tab-pane .PI_more { margin-left: 16px; }
 
+.mt { margin-top: 50px !important; }
+
+.plus { color: red !important; display: none; }
+
+.plusvw .plus { display: block; }
+
+.zpl_quck { position: fixed; top: 50px; right: 220px; width: 960px; padding: 30px; background-color: #fff; box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.12); z-index: 1; border-radius: 3px; }
+
+.zpl_quck > p { font-size: 18px; margin-bottom: 20px; display: block; }
+
+.zpl_quck .PI_back { padding: 10px; background: #efefef; border-radius: 50%; font-size: 20px; display: inline-flex; cursor: pointer; margin-top: -20px; position: absolute; left: -50px; }
+
+.zpl_quck .zpl_search { width: 100%; max-width: unset; margin-bottom: 26px; background: #fff; border: 1px solid #f1f1f1; box-shadow: none; }
+
+.zpl_quck .zpl_search input { padding: 15px 20px; }
+
+.zpl_quck .zpl_search:hover { box-shadow: none; }
+
+.zpl_quck font { display: flex; gap: 70px; }
+
+.zpl_quck font ul { width: 100%; }
+
+.zpl_quck font ul li { margin: 0 0 14px; padding-bottom: 14px; border-bottom: 1px dashed #e1e1e1; }
+
+.zpl_quck font ul li:last-child { margin: 0; border: none; }
+
+.zpl_quck font ul li p { text-transform: uppercase; font-size: 13px; color: #05245b; padding-bottom: 5px; display: flex; gap: 10px; font-weight: 500; }
+
+.zpl_quck font ul li p span { display: block; display: block; height: 20px; width: 23px; margin-right: 4px; }
+
+.zpl_quck font ul li a { color: #444; font-size: 13px; display: flex; gap: 8px; }
+
+.zpl_cvrblck { position: fixed; background-color: rgba(0, 0, 0, 0.52); top: 50px; right: 0; bottom: 0; left: 74px; }
+
+.customvw { display: none !important; }
+
+.custom .customvw { display: flex !important; }
+
+.zpl_actn { position: fixed; top: 50px; right: 160px; width: 350px; padding: 30px; background-color: #fff; box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.12); z-index: 1; border-radius: 3px; z-index: 0; }
+
+.zpl_actn .zpl_search { width: 100%; max-width: unset; margin-bottom: 26px; background: #fff; border-bottom: 1px solid #e9e9e9; border-radius: 0; box-shadow: none; }
+
+.zpl_actn .zpl_search input { padding: 15px 0; }
+
+.zpl_actn .zpl_search i { right: 0; }
+
+.zpl_actn .zpl_search:hover { box-shadow: none; }
+
+.zpl_actn font { display: flex; gap: 10px; margin-top: 20px; }
+
+.zpl_actn font ul { width: 100%; }
+
+.zpl_actn font ul li { margin: 0 0 14px; padding: 0 0 14px; border-bottom: 1px dashed #dbdbdb; }
+
+.zpl_actn font ul li:last-child { border: none; }
+
+.zpl_actn font ul li em { color: #0088FF; padding: 16px 0 0; cursor: pointer; display: block; width: 100%; }
+
+.zpl_actn font ul li:last-child { margin: 0; }
+
+.zpl_actn font ul li p { text-transform: uppercase; font-size: 12px; color: #073fa6; padding-bottom: 5px; display: flex; }
+
+.zpl_actn font ul li p span { display: block; display: block; height: 20px; width: 23px; margin-right: 4px; }
+
+.zpl_actn font ul li a { color: #444; font-size: 13px; display: flex; gap: 12px; position: relative; }
+
+.zpl_actn font ul li a i:first-child { color: #555; font-size: 16px; }
+
+.zpl_actn font ul li a i:last-child { position: absolute; right: 0; }
+
 .zpl_container, .zpl_iwrprrgt > div { padding: 0 !important; }
 
 .mangvw, .admnvw { display: none; pointer-events: none; visibility: hidden; }

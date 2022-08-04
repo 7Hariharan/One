@@ -13,6 +13,7 @@
             <li listid="" title="Me" class=""><a onclick="showtabs('home_me',this)">Me <em class=""></em></a></li>
             <li listid="" title="Team" class=""><a onclick="showtabs('home_team',this)">Team <em class=""></em></a></li>
             <li listid="" title="Organization" class=""><a onclick="showtabs('home_organization',this)">Organization <em class=""></em></a></li>
+            <li listid="" title="Todo's" class="todos"><a onclick="showtabs('home_todos',this)">Todo's <em class=""></em></a></li>
         </ul>
     </div>
     <div class="zpl_container" id="home_dash">
@@ -21,8 +22,8 @@
                 <div class="zpl_act">
                     <div class="zpl_rgtcnt">
                         <div id="me_dash">
-                            <h2 style="padding: 24px;background: red;color: #fff;text-align: center;">* Zoho one widgets can be customized in dashboard below *</h2>
-                            <img src="../../images/cmn/one_dash.png" style="padding: 0 10px;">
+                            <h2 style="padding: 24px;background: red;color: #fff !important;text-align: center;" class="plus">* People plus widgets can be customized in dashboard *</h2>
+                            <img src="../../images/cmn/one_dash.png" style="">
                         </div>
                     </div>
                 </div>
@@ -117,19 +118,113 @@
                 <div class="zpl_act">
                     <div class="zpl_rgtcnt">
                         <ul class="tab-pane">
+                            <li listid="" title="Subordinate" class="mangvw"><a onclick="showsubtabs('team_sub',this)">Subordinate</a></li>
                             <li listid="" title="Feeds" class="zpl_act"><a onclick="showsubtabs('team_feed',this)">Feeds</a></li>
                             <li listid="" title="Team" class=""><a onclick="showsubtabs('team_team',this)">Team</a></li>
-                            <li listid="" title="Subordinate" class="mangvw"><a onclick="showsubtabs('team_sub',this)">Subordinate</a></li>
+                            <li listid="" title="Team" class=""><a onclick="showsubtabs('team_file',this)">Files</a></li>
+                            <li listid="" title="Team" class=""><a onclick="showsubtabs('team_course',this)">Courses</a></li>
+                            <li listid="" title="Services" class=""><i class="zpl_ibg PI_more"></i></li>
                         </ul>
+                        <div id="team_sub" class="DN">
+                            <img src="../../images/cmn/reportee.png" alt="">
+                            <div class="zpl_tblres" style="padding: 0 20px;">
+                                <table class="zpl_tbl">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Employee</th>
+                                            <th>Contact</th>
+                                            <th>Attendance</th>
+                                            <th>Shift</th>
+                                            <th>Training</th>
+                                            <th>Available leave</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+
+                                            <td data-popup-open="empprofl">
+                                                <div class="zpl_em">
+                                                    <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                                    <div class="zpl_emdts">
+                                                        <div><em>2324 - </em><b>Kate Winslet</b></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-popup-open="empprofl"><span>9845783423</span>
+                                            </td>
+                                            <td data-popup-open="empprofl"><span class="grn">Office in</span></td>
+                                            <td data-popup-open="empattnd">
+                                                <p>General</p><span>9.30 am - 6.30 pm</span></td>
+                                            <td>
+                                                <span>1</span>
+                                            </td>
+                                            <td data-popup-open="empattnd">
+                                                <span>2/10</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td data-popup-open="empprofl">
+                                                <div class="zpl_em">
+                                                    <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                                    <div class="zpl_emdts">
+                                                        <div><em>2324 - </em><b>Kate Winslet</b></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-popup-open="empprofl"><span>9845783423</span>
+                                            </td>
+                                            <td data-popup-open="empprofl"><span class="grn">Office in</span></td>
+                                            <td data-popup-open="empattnd">
+                                                <p>General</p><span>9.30 am - 6.30 pm</span></td>
+                                            <td>
+                                                <span>1</span>
+                                            </td>
+                                            <td data-popup-open="empattnd">
+                                                <span>2/10</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td data-popup-open="empprofl">
+                                                <div class="zpl_em">
+                                                    <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                                    <div class="zpl_emdts">
+                                                        <div><em>2324 - </em><b>Kate Winslet</b></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-popup-open="empprofl"><span>9845783423</span>
+                                            </td>
+                                            <td data-popup-open="empprofl"><span class="grn">Office in</span></td>
+                                            <td data-popup-open="empattnd">
+                                                <p>General</p><span>9.30 am - 6.30 pm</span></td>
+                                            <td>
+                                                <span>1</span>
+                                            </td>
+                                            <td data-popup-open="empattnd">
+                                                <span>2/10</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h1 style="background-color: red; color: #fff; text-align: center; padding: 20px;">This Tab is only visible for managers.</h1>
+                            </div>
+                        </div>
                         <div id="team_feed">
                             <img src="../../images/cmn/feed.png" alt="">
                         </div>
                         <div id="team_team" class="DN" style="padding-left: 4px;">
                             <img src="../../images/cmn/view.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
-                            <img src="../../images/cmn/team.png" alt="">
+                            <img src="../../images/cmn/team.png" alt="" data-popup-open="empteam">
                         </div>
-                        <div id="team_sub" class="DN">
-                            <img src="../../images/cmn/report.png" alt="">
+                        <div id="team_file" class="DN" style="padding-left: 4px;">
+                            <img src="../../images/cmn/view.png" alt="" style="    width: 260px;/* right: 26px; */margin: -7px auto 15px;/* top: 0; */margin-right: 28px;display: block;position: absolute;right: 82px;top: 60px;">
+                            <img src="../../images/cmn/file.png" alt="">
+                        </div>
+                        <div id="team_course" class="DN" style="padding-left: 4px;">
+                            <img src="../../images/cmn/train.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -144,8 +239,9 @@
                         <ul class="tab-pane">
                             <li listid="" title="Anouncements" class="zpl_act"><a onclick="showsubtabs('org_anoun',this)">Anouncements</a></li>
                             <li listid="" title="Employees" class=""><a onclick="showsubtabs('org_emp',this)">Employees</a></li>
-                            <li listid="" title="File"><a onclick="showsubtabs('org_file',this)">File</a></li>
-                            <li listid="" title="Services" class=""><a onclick="showsubtabs('org_open',this)" class="plus">New Opening</a></li>
+                            <li listid="" title="File"><a onclick="showsubtabs('org_file',this)">Files</a></li>
+                            <!-- <li listid="" title="File"><a onclick="showsubtabs('org_holi',this)">Holidays</a></li> -->
+                            <li listid="" title="Services" class=""><a onclick="showsubtabs('org_open',this)" class="plus">Job Opening</a></li>
                         </ul>
                         <div id="org_anoun" class="">
                             <img src="../../images/cmn/feed.png" alt="">
@@ -158,11 +254,486 @@
                             <img src="../../images/cmn/view.png" alt="" style="    width: 260px;/* right: 26px; */margin: -7px auto 15px;/* top: 0; */margin-right: 28px;display: block;position: absolute;right: 82px;top: 60px;">
                             <img src="../../images/cmn/file.png" alt="">
                         </div>
-                        <div id="org_open" class="">
+                        <div id="org_holi" class="DN" style="padding-left: 10px;">
+                            <!-- <img src="../../images/cmn/view.png" alt="" style="    width: 260px;/* right: 26px; */margin: -7px auto 15px;/* top: 0; */margin-right: 28px;display: block;position: absolute;right: 82px;top: 60px;"> -->
+                            <img src="../../images/cmn/holi.png" alt="">
+                        </div>
+                        <div id="org_open" class="DN" style="padding-left: 10px;">
+                            <!-- <img src="../../images/cmn/view.png" alt="" style="    width: 260px;/* right: 26px; */margin: -7px auto 15px;/* top: 0; */margin-right: 28px;display: block;position: absolute;right: 82px;top: 60px;"> -->
                             <img src="../../images/cmn/opening.png" alt="" style="padding: 0px 30px;margin-top: -10px;">
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="zpl_container DN" id="home_todos">
+        <!-- <div class="zpl_topmnu">
+
+            <ul class="tab-pane">
+                <li listid="" title="Me" class="usr zpl_act"><a onclick="showtabs('todotop_me',this)">Me <em class=""></em></a></li>
+                <li listid="" title="Team" class="mangvw"><a onclick="showtabs('todotop_team',this)">Me & Team</a></li>
+                <li listid="" title="Organization" class="admnvw"><a onclick="showtabs('todotop_org',this)">Organization <em class=""></em></a></li>
+            </ul>
+        </div> -->
+
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <ul class="tab-pane">
+                            <li listid="" title="Sub" class="mangvw zpl_act"><a onclick="showsubtabs('todoteam_sub',this)">Subordinates</a></li>
+                            <li listid="" title="Approval" class="mangvw"><a onclick="showsubtabs('todoteam_aprvl',this)">Approval</a></li>
+                            <li listid="" title="Jobs"><a onclick="showsubtabs('todoteam_job',this)">Jobs</a></li>
+                            <li listid="" title="Goals" class=""><a onclick="showsubtabs('todoteam_goal',this)">Goals <em class="notfiy numb">1</em></a></li>
+                            <li listid="" title="Tasks" class=""><a onclick="showsubtabs('todoteam_task',this)">Tasks <em class="notfiy numb">2</em></a></li>
+                            <li listid="" title="Reviews"><a onclick="showsubtabs('todoteam_rvw',this)">Reviews</a></li>
+                            <li listid="" title="Recruit" class="mangvw"><a class="plus" onclick="showsubtabs('todome_rcrt',this)">Recruit</a></li>
+                            <li listid="" title="Reviews"><a onclick="showsubtabs('todoteam_org',this)">Operations</a></li>
+                        </ul>
+
+                        <div id="todoteam_sub">
+                            <!-- <img src="../../images/cmn/custvw.png" alt="" style="    width: 230px;/* right: 26px; */margin: 0 auto 15px;/* top: 0; */    margin-right: 28px;display: block;position: absolute;right: 0;"> -->
+                            <img src="../../images/cmn/dropdwn.png" style="width: 300px;border-radius: 5px;margin: 0 0 16px 20px;">
+                            <div class="zpl_tblres" style="padding: 0 20px;">
+                                <h1 style="background-color: red; color: #fff; text-align: center; padding: 20px;">This Tab is only visible for managers.</h1>
+                                <table class="zpl_tbl">
+                                    <thead>
+                                        <tr>
+
+                                            <th>Employee</th>
+                                            <th>Jobs</th>
+                                            <th>Goals</th>
+                                            <th>Tasks</th>
+                                            <th>
+                                                <div></div>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-popup-open="empjob">
+
+                                            <td>
+                                                <div class="zpl_em">
+                                                    <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                                    <div class="zpl_emdts">
+                                                        <div><em>2324 - </em><b>Kate Winslet</b></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-popup-open="empjob"><span>2</span>
+                                            </td>
+                                            <td data-popup-open="empgoal"><span>4</span></td>
+                                            <td data-popup-open="emptask">
+                                                <span>7</span>
+                                            </td>
+                                            <td width="10%">
+                                                <div class="text-center">
+                                                    <div class="zpl_hvr">
+                                                        <a href="#" class="zlabel zlabel--blue zlabel--primary zlabel--medium">Review</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-popup-open="empjob">
+
+                                            <td>
+                                                <div class="zpl_em">
+                                                    <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                                    <div class="zpl_emdts">
+                                                        <div><em>2324 - </em><b>Kate Winslet</b></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-popup-open="empjob"><span>2</span>
+                                            </td>
+                                            <td data-popup-open="empgoal"><span>4</span></td>
+                                            <td data-popup-open="emptask">
+                                                <span>7</span>
+                                            </td>
+                                            <td width="10%">
+                                                <div class="text-center">
+                                                    <div class="zpl_hvr">
+                                                        <a href="#" class="zlabel zlabel--blue zlabel--primary zlabel--medium">Review</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-popup-open="empjob">
+
+                                            <td>
+                                                <div class="zpl_em">
+                                                    <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                                    <div class="zpl_emdts">
+                                                        <div><em>2324 - </em><b>Kate Winslet</b></div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-popup-open="empjob"><span>2</span>
+                                            </td>
+                                            <td data-popup-open="empgoal"><span>4</span></td>
+                                            <td data-popup-open="emptask">
+                                                <span>7</span>
+                                            </td>
+                                            <td width="10%">
+                                                <div class="text-center">
+                                                    <div class="zpl_hvr">
+                                                        <a href="#" class="zlabel zlabel--blue zlabel--primary zlabel--medium">Review</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="todoteam_aprvl" class="DN">
+                            <h1 style="background-color: red; color: #fff; text-align: center; padding: 20px;">This Tab is only visible for managers.</h1>
+                            <img src="../../images/cmn/apprvl.png" style="padding: 0 6px;">
+                        </div>
+                        <div id="todoteam_job" class="DN">
+                            <img src="../../images/cmn/custvw.png" alt="" style="    width: 230px;/* right: 26px; */margin: 0 auto 15px;/* top: 0; */    margin-right: 28px;display: block;position: absolute;right: 0;">
+                            <img src="../../images/cmn/dropdwn.png" style="width: 300px;border-radius: 5px;margin: 0 0 16px 20px;">
+                            <img src="../../images/cmn/teamjob.png" style="padding: 0 4px;">
+                        </div>
+                        <div id="todoteam_goal" class="DN" style="">
+                            <img src="../../images/cmn/custvw.png" alt="" style="    width: 230px;/* right: 26px; */margin: 0 auto 15px;/* top: 0; */    margin-right: 28px;display: block;position: absolute;right: 0;">
+                            <img src="../../images/cmn/dropdwn.png" style="width: 300px;border-radius: 5px;margin: 0 0 16px 20px;">
+                            <img src="../../images/cmn/mygoal.png">
+                        </div>
+                        <div id="todoteam_task" class="DN">
+                            <img src="../../images/cmn/custvw.png" alt="" style="    width: 230px;/* right: 26px; */margin: 0 auto 15px;/* top: 0; */    margin-right: 28px;display: block;position: absolute;right: 0;">
+                            <img src="../../images/cmn/dropdwn.png" style="width: 300px;border-radius: 5px;margin: 0 0 16px 20px;">
+                            <img src="../../images/cmn/task.png">
+                        </div>
+                        <div id="todoteam_rvw" class="DN">
+                            <img src="../../images/cmn/custvw.png" alt="" style="    width: 230px;/* right: 26px; */margin: 0 auto 15px;/* top: 0; */    margin-right: 28px;display: block;position: absolute;right: 0;">
+                            <img src="../../images/cmn/dropdwn.png" style="width: 300px;border-radius: 5px;margin: 0 0 16px 20px;">
+                            <img src="../../images/cmn/teamrvw.png">
+                        </div>
+                        <div id="todome_rcrt" class="DN">
+                            <img src="../../images/cmn/recruit.png">
+                        </div>
+                        <div id="todoteam_org" class="DN">
+                            <h1 style="background-color: red; color: #fff; text-align: center; padding: 20px;">This Tab is only visible for Module admins.</h1>
+                            <img src="../../images/cmn/oper.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="zpl_container DN" id="todotop_me">
+            <div class="zpl_iwrpr">
+                <div class="zpl_iwrprrgt">
+                    <div class="zpl_act">
+                        <div class="zpl_rgtcnt">
+                            <ul class="tab-pane">
+                                <li listid="" title="Approval" class="mangvw"><a onclick="showsubtabs('todome_aprvl',this)">Approval</a></li>
+                                <li listid="" title="Jobs" class="zpl_act"><a onclick="showsubtabs('todome_job',this)">Jobs</a></li>
+                                <li listid="" title="Goals" class=""><a onclick="showsubtabs('todome_goal',this)">Goals</a></li>
+                                <li listid="" title="Tasks" class=""><a onclick="showsubtabs('todome_task',this)">Tasks</a></li>
+                                <li listid="" title="Reviews"><a onclick="showsubtabs('todome_rvw',this)">Reviews</a></li>
+                            </ul>
+                            <div id="todome_job">
+                                <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                                <img src="../../images/cmn/job.png" style="padding: 0 4px;">
+                            </div>
+                            <div id="todome_goal" class="DN" style="">
+                                <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 18px;display: block;">
+                                <img src="../../images/cmn/mygoal.png">
+                            </div>
+                            <div id="todome_task" class="DN">
+                                <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                                <img src="../../images/cmn/task.png">
+                            </div>
+                            <div id="todome_rvw" class="DN">
+                                <img src="../../images/cmn/custvw.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
+                                <img src="../../images/cmn/myrvw.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="zpl_container" id="todotop_team">
+        </div>
+        <div class="zpl_container DN" id="todotop_org">
+            <div class="zpl_iwrpr">
+                <div class="zpl_iwrprrgt">
+                    <div class="zpl_act">
+                        <div class="zpl_rgtcnt">
+                            <img src="../../images/cmn/oper.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-modal-box="empjob" class="zpl_mdl">
+            <div class="zpl_minr">
+                <div class="zpl_mcnt zpl_fm" style="padding: 20px 0px 0 24px;">
+                    <a class="_cls PI_cls" style="margin-bottom: -30px;z-index: 6;position: relative;top: 10px;right: 35px;"></a>
+                    <form>
+                        <div class="zpl_dashmain">
+                            <div class="zpl_dashhdr">
+                                <div class="zpl_dashhdrlft">
+                                    <div class="zpl_em">
+                                        <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                        <div class="zpl_emdts">
+                                            <span>0293 - <b>Daniel Jacob</b></span>
+                                            <div>
+                                                <em>Visual Designer - Zoho People</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zpl_dashhdrmid">
+                                </div>
+                            </div>
+                            <div class="dashwrpr">
+                                <div class="dashtab">
+                                    <nav class="zpl_dashnav">
+                                        <ul>
+                                            <li onclick="showtabself('home_selfreport',this)" class="zpl_act"><a href="javascript:;">Jobs</a></li>
+                                            <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Goals</a></li>
+                                            <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Task</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="dashwidget">
+                                        <i class="PI_fltr wdgtico"></i>
+                                    </div>
+                                </div>
+                                <div class="zpl_mdltabwrpr">
+                                    <img src="../../images/cmn/job.png" style="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div data-modal-box="empgoal" class="zpl_mdl">
+            <div class="zpl_minr">
+                <div class="zpl_mcnt zpl_fm" style="padding: 20px 0px 0 24px;">
+                    <a class="_cls PI_cls" style="margin-bottom: -30px;z-index: 6;position: relative;top: 10px;right: 35px;"></a>
+                    <form>
+                        <div class="zpl_dashmain">
+                            <div class="zpl_dashhdr">
+                                <div class="zpl_dashhdrlft">
+                                    <div class="zpl_em">
+                                        <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                        <div class="zpl_emdts">
+                                            <span>0293 - <b>Daniel Jacob</b></span>
+                                            <div>
+                                                <em>Visual Designer - Zoho People</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zpl_dashhdrmid">
+                                </div>
+                            </div>
+                            <div class="dashwrpr">
+                                <div class="dashtab">
+                                    <nav class="zpl_dashnav">
+                                        <ul>
+                                            <li onclick="showtabself('home_selfreport',this)"><a href="javascript:;">Jobs</a></li>
+                                            <li onclick="showtabself('home_selfrequest',this)" class="zpl_act"><a href="javascript:;">Goals</a></li>
+                                            <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Task</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="dashwidget">
+                                        <i class="PI_fltr wdgtico"></i>
+                                    </div>
+                                </div>
+                                <div class="zpl_mdltabwrpr">
+                                    <img src="../../images/cmn/mygoal.png" style="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div data-modal-box="emptask" class="zpl_mdl">
+            <div class="zpl_minr">
+                <div class="zpl_mcnt zpl_fm" style="padding: 20px 0px 0 24px;">
+                    <a class="_cls PI_cls" style="margin-bottom: -30px;z-index: 6;position: relative;top: 10px;right: 35px;"></a>
+                    <form>
+                        <div class="zpl_dashmain">
+                            <div class="zpl_dashhdr">
+                                <div class="zpl_dashhdrlft">
+                                    <div class="zpl_em">
+                                        <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                        <div class="zpl_emdts">
+                                            <span>0293 - <b>Daniel Jacob</b></span>
+                                            <div>
+                                                <em>Visual Designer - Zoho People</em>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zpl_dashhdrmid">
+                                </div>
+                            </div>
+                            <div class="dashwrpr">
+                                <div class="dashtab">
+                                    <nav class="zpl_dashnav">
+                                        <ul>
+                                            <li onclick="showtabself('home_selfreport',this)"><a href="javascript:;">Jobs</a></li>
+                                            <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Goals</a></li>
+                                            <li onclick="showtabself('home_selfrequest',this)" class="zpl_act"><a href="javascript:;">Task</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="dashwidget">
+                                        <i class="PI_fltr wdgtico"></i>
+                                    </div>
+                                </div>
+                                <div class="zpl_mdltabwrpr">
+                                    <img src="../../images/cmn/task.png" style="">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-modal-box="empprofl" class="zpl_mdl zpl_mlg zpl_mcenter">
+        <div class="zpl_minr" style="width: 100%;transform: scale(1);margin: auto;max-width: 100%;">
+            <div class="zpl_mcnt zpl_fm" style="padding: 20px 0px 0 24px;">
+                <a class="_cls PI_cls" style="margin-bottom: -30px;z-index: 6;position: relative;top: 10px;right: 35px;"></a>
+                <form>
+                    <div class="zpl_dashmain">
+                        <div class="zpl_dashhdr">
+                            <div class="zpl_dashhdrlft">
+                                <div class="zpl_em">
+                                    <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                    <div class="zpl_emdts">
+                                        <span>0293 - <b>Daniel Jacob</b></span>
+                                        <div>
+                                            <em>Visual Designer - Zoho People</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="zpl_dashhdrmid">
+                            </div>
+                        </div>
+                        <div class="dashwrpr">
+                            <div class="dashtab">
+                                <nav class="zpl_dashnav">
+                                    <ul>
+                                        <!-- <li onclick="showtabself('home_selfprofile',this)"><a href="javascript:;">Dashboard</a></li> -->
+                                        <!-- <li onclick="showtabself('home_selfprofile',this)"><a href="javascript:;">Feeds</a></li> -->
+                                        <li onclick="showtabself('home_selfreport',this)" class="zpl_act"><a>Profile</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Attendance</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Courses</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Todo's</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Request</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;"><i onclick="moreicon(event,this,'memore')" style="position: relative;top: -8px;" class="zpl_ibg PI_more"></i></a></li>
+                                    </ul>
+                                </nav>
+                                <div class="dashwidget">
+                                    <i class="PI_fltr wdgtico"></i>
+                                </div>
+                            </div>
+                            <div class="zpl_mdltabwrpr">
+                                <img src="../../images/cmn/proflbdy.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div data-modal-box="empteam" class="zpl_mdl zpl_mlg zpl_mcenter">
+        <div class="zpl_minr" style="width: 100%;transform: scale(1);margin: auto;max-width: 100%;">
+            <div class="zpl_mcnt zpl_fm" style="padding: 20px 0px 0 24px;">
+                <a class="_cls PI_cls" style="margin-bottom: -30px;z-index: 6;position: relative;top: 10px;right: 35px;"></a>
+                <form>
+                    <div class="zpl_dashmain">
+                        <div class="zpl_dashhdr">
+                            <div class="zpl_dashhdrlft">
+                                <div class="zpl_em">
+                                    <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                    <div class="zpl_emdts">
+                                        <span>0293 - <b>Daniel Jacob</b></span>
+                                        <div>
+                                            <em>Visual Designer - Zoho People</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="zpl_dashhdrmid">
+                            </div>
+                        </div>
+                        <div class="dashwrpr">
+                            <div class="dashtab">
+                                <nav class="zpl_dashnav">
+                                    <ul>
+                                        <li onclick="showtabself('home_selfreport',this)" class="zpl_act"><a>Profile</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="dashwidget">
+                                    <i class="PI_fltr wdgtico"></i>
+                                </div>
+                            </div>
+                            <div class="zpl_mdltabwrpr">
+                                <img src="../../images/cmn/proflbdy.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div data-modal-box="empattnd" class="zpl_mdl zpl_mlg zpl_mcenter">
+        <div class="zpl_minr" style="width: 100%;transform: scale(1);margin: auto;max-width: 100%;">
+            <div class="zpl_mcnt zpl_fm" style="padding: 20px 0px 0 24px;">
+                <a class="_cls PI_cls" style="margin-bottom: -30px;z-index: 6;position: relative;top: 10px;right: 35px;"></a>
+                <form>
+                    <div class="zpl_dashmain">
+                        <div class="zpl_dashhdr">
+                            <div class="zpl_dashhdrlft">
+                                <div class="zpl_em">
+                                    <div class="zpl_emimg"><img src="../../images/ui.png"></div>
+                                    <div class="zpl_emdts">
+                                        <span>0293 - <b>Daniel Jacob</b></span>
+                                        <div>
+                                            <em>Visual Designer - Zoho People</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="zpl_dashhdrmid">
+                            </div>
+                        </div>
+                        <div class="dashwrpr">
+                            <div class="dashtab">
+                                <nav class="zpl_dashnav">
+                                    <ul>
+                                        <li onclick="showtabself('home_selfreport',this)"><a>Profile</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)" class="zpl_act"><a href="javascript:;">Attendance</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Courses</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Todo's</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;">Request</a></li>
+                                        <li onclick="showtabself('home_selfrequest',this)"><a href="javascript:;"><i onclick="moreicon(event,this,'memore')" style="position: relative;top: -8px;" class="zpl_ibg PI_more"></i></a></li>
+                                    </ul>
+                                </nav>
+                                <div class="dashwidget">
+                                    <i class="PI_fltr wdgtico"></i>
+                                </div>
+                            </div>
+                            <div class="zpl_mdltabwrpr">
+                                <img src="../../images/cmn/attnd.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -370,62 +941,128 @@
     </div>
 </div>
 
-
-<div class="zpl_quck DNI">
-    <div class="zpl_search">
-        <input placeholder="Search" type="search" class="ztextbox mainsearch-js">
-        <i class="PI_lens" onclick="hide('minsrcJs')"></i>
-        <ul class="zpl_minsrc" id="minsrcJs">
-            <li>
-                <span><mark>Leave log</mark>, <em>Leave</em></span>
-            </li>
-            <li>
-                <span><mark>Leave applications</mark>, <em>Leave</em></span>
-            </li>
-            <li>
-                <span><mark>Comp off</mark>, <em>Leave</em></span>
-            </li>
-        </ul>
+<div class="zpl_cvrblck DNI">
+    <div class="zpl_actn DNI">
+        <div class="zpl_search">
+            <input placeholder="Search" type="search" class="ztextbox mainsearch-js">
+            <i class="PI_lens" onclick="hide('minsrcJs')"></i>
+            <ul class="zpl_minsrc" id="minsrcJs">
+                <li>
+                    <span><mark>Leave log</mark>, <em>Leave</em></span>
+                </li>
+                <li>
+                    <span><mark>Leave applications</mark>, <em>Leave</em></span>
+                </li>
+                <li>
+                    <span><mark>Comp off</mark>, <em>Leave</em></span>
+                </li>
+            </ul>
+        </div>
+        <h6>Quick Links</h6>
+        <font>
+            <ul>
+                <li>
+                    <a><i class="PI_calen"></i>Apply Leave<i class="PI_fil_askus ylw"></i></a>
+                </li>
+                <li>
+                    <a><i class="PI_calen"></i>Apply Comp Off<i class="PI_fil_askus ylw"></i></a>
+                </li>
+                <li>
+                    <a><i class="PI_travel1"></i>Travel Request<i class="PI_fil_askus ylw"></i></a>
+                </li>
+                <li>
+                    <a><i class="PI_file"></i>Custom Form 2<i class="PI_fil_askus ylw"></i></a>
+                </li>
+                <li>
+                    <a><i class="PI_case"></i>Time Log<i class="PI_fil_askus ylw"></i></a>
+                </li>
+                <li>
+                    <a><i class="PI_clock1"></i>Request shift change<i class="PI_fil_askus ylw"></i></a>
+                </li>
+                <li>
+                    <a><i class="PI_training1"></i>Add New Case <i class="PI_fil_askus ylw"></i></a>
+                </li>
+                <li>
+                    <em onclick="quckact()">View All</em>
+                </li>
+            </ul>
+        </font>
     </div>
-    <font>
-        <ul>
-            <li>
-                <p><span style="background: url(../../images/settings/zp-spriteinteg.png);background-size: 200px;background-position: -94px -91px;"></span> People</p>
-            </li>
-            <li><a>+ Apply Leave</a></li>
-            <li><a>+ Contact Tracing Form</a></li>
-            <li><a>+ Employee Document</a></li>
-            <li><a>+ GMC Dependent Details</a></li>
-            <li><a>+ Spouse &amp; Child Inclusion</a></li>
-            <li><a>+ RACI Category</a></li>
-            <li><a>+ RACI Activity</a></li>
-            <li><a>+ Employee Activities</a></li>
-            <li><a>+ HR Letters</a></li>
-        </ul>
-        <ul>
-            <li>
-                <p><span style="background: url(../../images/settings/zp-spriteinteg.png);background-size: 200px;background-position: -24px -54px;"></span>Cliq</p>
-            </li>
-            <li><a>+ Send a Direct Message</a></li>
-            <li><a>+ Start a Group Conversation</a></li>
-            <li><a>+ Start Broadcast</a></li>
-            <li><a>+ Start Meeting</a></li>
-            <li><a>+ Set a Reminder</a></li>
-            <li><a>+ Plan an Event</a></li>
-        </ul>
-        <ul>
-            <li>
-                <p><span style="background: url(../../images/settings/zp-spriteinteg.png);background-size: 220px;background-position: -61px -39px;"></span>Connect</p>
-            </li>
-            <li><a>+ Start a conversation</a></li>
-            <li><a>+ Ask a question</a></li>
-            <li><a>+ Make an announcement</a></li>
-            <li><a>+ Start a poll</a></li>
-            <li><a>+ Create a Task</a></li>
-            <li><a>+ Create an Event</a></li>
-            <li><a>+ Write a Forum post</a></li>
-        </ul>
-    </font>
+
+
+    <div class="zpl_quck DNI">
+        <i class="PI_back" onclick="quckact()"></i>
+        <p>All Request</p>
+        <div class="zpl_search">
+            <input placeholder="Search" type="search" class="ztextbox mainsearch-js">
+            <i class="PI_lens" onclick="hide('minsrcJs')"></i>
+            <ul class="zpl_minsrc" id="minsrcJs">
+                <li>
+                    <span><mark>Leave log</mark>, <em>Leave</em></span>
+                </li>
+                <li>
+                    <span><mark>Leave applications</mark>, <em>Leave</em></span>
+                </li>
+                <li>
+                    <span><mark>Comp off</mark>, <em>Leave</em></span>
+                </li>
+            </ul>
+        </div>
+        <font>
+            <ul>
+                <li>
+                    <p><i class="PI_calen"></i>Leave Tracker</p>
+                </li>
+                <li><a><i class="PI_fil_askus ylw"></i> Apply Leave</a></li>
+                <li><a><i class="PI_star"></i> Custom Form 1</a></li>
+                <li><a><i class="PI_star"></i> Custom Form 2</a></li>
+                <li class="mt">
+                    <p><i class="PI_calen"></i>Attendance</p>
+                </li>
+                <li><a><i class="PI_fil_askus ylw"></i> Apply Comp Off</a></li>
+                <li><a><i class="PI_star"></i> Custom Form 2</a></li>
+                <li><a><i class="PI_fil_askus ylw"></i> Shift Change</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p><i class="PI_org"></i> Time Tracker</p>
+                </li>
+                <li><a><i class="PI_fil_askus ylw"></i> Time Log</a></li>
+                <li><a><i class="PI_star"></i> Custom Form 1</a></li>
+                <li><a><i class="PI_fil_askus ylw"></i> Custom Form 2</a></li>
+                <li class="mt">
+                    <p><i class="PI_org"></i> Files</p>
+                </li>
+                <li><a><i class="PI_fil_askus ylw"></i> Add Files</a></li>
+                <li><a><i class="PI_star"></i> Custom Form 1</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p><i class="PI_usr"></i> LMS</p>
+                </li>
+                <li><a><i class="PI_star"></i> Custom Form 1</a></li>
+                <li><a><i class="PI_star"></i> Custom Form 2</a></li>
+                <!-- <li><a><i class="PI_star"></i> Campaign Access</a></li> -->
+                <li class="mt">
+                    <p><i class="PI_usr"></i> HR Cases</p>
+                </li>
+                <li><a><i class="PI_fil_askus ylw"></i> Add New Case</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p><i class="PI_Icon_17"></i> Services</p>
+                </li>
+                <li><a><i class="PI_star"></i> Company Policy</a></li>
+                <li><a><i class="PI_star"></i> Training Registration</a></li>
+                <li><a><i class="PI_fil_askus ylw"></i> Travel Request</a></li>
+                <li><a><i class="PI_star"></i> Performance Appraisal</a></li>
+                <li><a><i class="PI_star"></i> Add Task</a></li>
+                <li><a><i class="PI_star"></i> Hall Booking</a></li>
+                <li><a><i class="PI_star"></i> Self Appraisal</a></li>
+                <li><a><i class="PI_star"></i> Projects</a></li>
+            </ul>
+        </font>
+    </div>
 </div>
 
 <!-- Footer -->
