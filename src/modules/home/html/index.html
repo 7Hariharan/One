@@ -13,7 +13,7 @@
             <li listid="" title="Me" class=""><a onclick="showtabs('home_me',this)">Me <em class=""></em></a></li>
             <li listid="" title="Team" class=""><a onclick="showtabs('home_team',this)">Team <em class=""></em></a></li>
             <li listid="" title="Organization" class=""><a onclick="showtabs('home_organization',this)">Organization <em class=""></em></a></li>
-            <li listid="" title="Todo's" class="todos"><a onclick="showtabs('home_todos',this)">Todo's <em class=""></em></a></li>
+            <!-- <li listid="" title="Todo's" class="todos"><a onclick="showtabs('home_todos',this)">Todo's <em class=""></em></a></li> -->
         </ul>
     </div>
     <div class="zpl_container" id="home_dash">
@@ -22,7 +22,7 @@
                 <div class="zpl_act">
                     <div class="zpl_rgtcnt">
                         <div id="me_dash">
-                            <h2 style="padding: 24px;background: red;color: #fff !important;text-align: center;" class="plus">* People plus widgets can be customized in dashboard *</h2>
+                            <h2 style="padding: 24px;background: red;color: #fff !important;text-align: center;" class="plus">* Zoho One widgets can be customized in dashboard *</h2>
                             <img src="../../images/cmn/one_dash.png" style="">
                         </div>
                     </div>
@@ -36,15 +36,32 @@
                 <div class="zpl_act">
                     <div class="zpl_rgtcnt">
                         <ul class="tab-pane">
-                            <li listid="" title="Profile" class="zpl_act"><a onclick="showsubtabs('me_prof',this)">Profile</a></li>
-                            <li listid="" title="Attendance" class=""><a onclick="showsubtabs('me_attnd',this)">Attendance</a></li>
-                            <li listid="" title="Training" class=""><a onclick="showsubtabs('me_train',this)">Training</a></li>
-                            <li listid="" title="Services" class=""><a onclick="showsubtabs('me_serv',this)">Services</a></li>
-                            <li listid="" title="Services" class=""><a onclick="showsubtabs('me_payrol',this)" class="plus">Payroll</a></li>
-                            <li listid="" title="Services" class=""><a onclick="showsubtabs('me_vault',this)" class="plus">Vault</a></li>
+                            <li listid="" title="Services" class="zpl_act"><a onclick="showsubtabs('me_fold',this)">WD - Folder</a></li>
+                            <li listid="" title="Services" class=""><a onclick="showsubtabs('me_vault',this)">Vault</a></li>
+                            <li listid="" title="Services" class=""><a onclick="showsubtabs('me_mail',this)">Mail</a></li>
+                            <li listid="" title="Profile" class="custmvw"><a onclick="showsubtabs('me_prof',this)">Profile</a></li>
+                            <li listid="" title="Attendance" class="custmvw"><a onclick="showsubtabs('me_attnd',this)">Attendance</a></li>
+                            <li listid="" title="Training" class="custmvw"><a onclick="showsubtabs('me_train',this)">Training</a></li>
+                            <li listid="" title="Services" class="custmvw"><a onclick="showsubtabs('me_serv',this)">Services</a></li>
+                            <li listid="" title="Services" class="custmvw"><a onclick="showsubtabs('me_payrol',this)" class="plus">Payroll</a></li>
                             <li listid="" title="Services" class=""><i onclick="moreicon(event,this,'memore')" class="zpl_ibg PI_more"></i></li>
                         </ul>
-                        <div id="me_prof" style="padding: 0 26px;">
+                        <div id="me_fold" class="">
+
+                            <img src="../../images/cmn/fold_me.png" alt="">
+
+                        </div>
+                        <div id="me_mail" class="">
+
+                            <img src="../../images/cmn/mail.png" alt="">
+
+                        </div>
+                        <div id="me_vault" class="DN">
+
+                            <img src="../../images/cmn/vault.png" alt="">
+
+                        </div>
+                        <div id="me_prof" class="DN" style="padding: 0 26px;">
                             <img src="../../images/cmn/proflhd.png" style="border-radius: 12px;" alt="">
                             <img src="../../images/cmn/proflbdy.png" alt="">
                         </div>
@@ -67,11 +84,6 @@
                         <div id="me_payrol" class="DN">
 
                             <img src="../../images/cmn/payroll.png" alt="">
-
-                        </div>
-                        <div id="me_vault" class="DN">
-
-                            <img src="../../images/cmn/vault.png" alt="" style="padding: 0 30px;">
 
                         </div>
                     </div>
@@ -101,15 +113,23 @@
         </div>
     </div>
 
-    <ul id="memore" class="zpl_drpdwn" style="top: 60px;left: 372px;">
-        <li>Files</li>
-        <li>KRA</li>
-        <li>My competency</li>
-        <li>Compensation</li>
-        <li>Review</li>
-        <li>All requests</li>
-        <li>Completed work items</li>
-        <li>Career growth</li>
+    <ul id="memore" class="zpl_drpdwn" style="top: 60px;left: 260px;">
+        <li>My Documents</li>
+        <li>My Spreadsheets</li>
+        <li>My Presentation</li>
+        <li>Past session</li>
+    </ul>
+    <ul id="teammore" class="zpl_drpdwn" style="top: 60px;left: 140px;">
+        <li>Team Documents</li>
+        <li>Team Spreadsheets</li>
+        <li>Team Presentation</li>
+        <li>Past session</li>
+    </ul>
+    <ul id="orgmore" class="zpl_drpdwn" style="top: 60px;left: 140px;">
+        <li>Org Documents</li>
+        <li>Org Spreadsheets</li>
+        <li>Org Presentation</li>
+        <li>Past session</li>
     </ul>
 
     <div class="zpl_container DN" id="home_team">
@@ -118,13 +138,18 @@
                 <div class="zpl_act">
                     <div class="zpl_rgtcnt">
                         <ul class="tab-pane">
-                            <li listid="" title="Subordinate" class="mangvw"><a onclick="showsubtabs('team_sub',this)">Subordinate</a></li>
-                            <li listid="" title="Feeds" class="zpl_act"><a onclick="showsubtabs('team_feed',this)">Feeds</a></li>
-                            <li listid="" title="Team" class=""><a onclick="showsubtabs('team_team',this)">Team</a></li>
-                            <li listid="" title="Team" class=""><a onclick="showsubtabs('team_file',this)">Files</a></li>
-                            <li listid="" title="Team" class=""><a onclick="showsubtabs('team_course',this)">Courses</a></li>
-                            <li listid="" title="Services" class=""><i class="zpl_ibg PI_more"></i></li>
+                            <li listid="" title="Feeds" class="zpl_act"><a onclick="showsubtabs('team_fold',this)">WD - Folder</a></li>
+                            <li listid="" title="Subordinate" class="custmvw mangvw"><a onclick="showsubtabs('team_sub',this)">Subordinate</a></li>
+                            <li listid="" title="Feeds" class="custmvw zpl_act"><a onclick="showsubtabs('team_feed',this)">Feeds</a></li>
+                            <li listid="" title="Team" class="custmvw "><a onclick="showsubtabs('team_team',this)">Team</a></li>
+                            <li listid="" title="Team" class="custmvw "><a onclick="showsubtabs('team_file',this)">Files</a></li>
+                            <li listid="" title="Team" class="custmvw "><a onclick="showsubtabs('team_course',this)">Courses</a></li>
+                            <li listid="" title="Services" onclick="moreicon(event,this,'teammore')"><i class="zpl_ibg PI_more"></i></li>
                         </ul>
+
+                        <div id="team_fold">
+                            <img src="../../images/cmn/fold_team.png" alt="" style="padding: 0 30px;">
+                        </div>
                         <div id="team_sub" class="DN">
                             <img src="../../images/cmn/reportee.png" alt="">
                             <div class="zpl_tblres" style="padding: 0 20px;">
@@ -212,9 +237,10 @@
                                 <h1 style="background-color: red; color: #fff; text-align: center; padding: 20px;">This Tab is only visible for managers.</h1>
                             </div>
                         </div>
-                        <div id="team_feed">
+                        <div id="team_feed" class="DN">
                             <img src="../../images/cmn/feed.png" alt="">
                         </div>
+
                         <div id="team_team" class="DN" style="padding-left: 4px;">
                             <img src="../../images/cmn/view.png" alt="" style="width: 230px;/* right: 26px; */margin: -10px auto 15px;/* top: 0; */margin-right: 28px;display: block;">
                             <img src="../../images/cmn/team.png" alt="" data-popup-open="empteam">
@@ -237,13 +263,19 @@
                 <div class="zpl_act">
                     <div class="zpl_rgtcnt">
                         <ul class="tab-pane">
-                            <li listid="" title="Anouncements" class="zpl_act"><a onclick="showsubtabs('org_anoun',this)">Anouncements</a></li>
-                            <li listid="" title="Employees" class=""><a onclick="showsubtabs('org_emp',this)">Employees</a></li>
-                            <li listid="" title="File"><a onclick="showsubtabs('org_file',this)">Files</a></li>
+                            <li listid="" title="Anouncements" class="zpl_act"><a onclick="showsubtabs('org_fold',this)">WD - Folder</a></li>
+                            <li listid="" title="Anouncements" class="custmvw"><a onclick="showsubtabs('org_anoun',this)">Anouncements</a></li>
+                            <li listid="" title="Employees" class="custmvw "><a onclick="showsubtabs('org_emp',this)">Employees</a></li>
+                            <li listid="" title="File" class="custmvw"><a onclick="showsubtabs('org_file',this)">Files</a></li>
                             <!-- <li listid="" title="File"><a onclick="showsubtabs('org_holi',this)">Holidays</a></li> -->
-                            <li listid="" title="Services" class=""><a onclick="showsubtabs('org_open',this)" class="plus">Job Opening</a></li>
+                            <li listid="" title="Services" class="custmvw "><a onclick="showsubtabs('org_open',this)" class="plus">Job Opening</a></li>
+                            <li listid="" title="Services" class="" onclick="moreicon(event,this,'orgmore')"><i class="zpl_ibg PI_more"></i></li>
                         </ul>
-                        <div id="org_anoun" class="">
+                        <div id="org_fold" class="">
+                            <h2 style="padding: 24px;background: red;color: #fff !important;text-align: center;" class="plus">* Org level folders will be listed below *</h2>
+                            <img src="../../images/cmn/fold_team.png" alt="" style="padding: 0 30px;">
+                        </div>
+                        <div id="org_anoun" class="DN">
                             <img src="../../images/cmn/feed.png" alt="">
                         </div>
                         <div id="org_emp" class="DN" style="padding-left: 20px;">
@@ -267,15 +299,7 @@
             </div>
         </div>
     </div>
-    <div class="zpl_container DN" id="home_todos">
-        <!-- <div class="zpl_topmnu">
-
-            <ul class="tab-pane">
-                <li listid="" title="Me" class="usr zpl_act"><a onclick="showtabs('todotop_me',this)">Me <em class=""></em></a></li>
-                <li listid="" title="Team" class="mangvw"><a onclick="showtabs('todotop_team',this)">Me & Team</a></li>
-                <li listid="" title="Organization" class="admnvw"><a onclick="showtabs('todotop_org',this)">Organization <em class=""></em></a></li>
-            </ul>
-        </div> -->
+    <!-- <div class="zpl_container DN" id="home_todos">
 
         <div class="zpl_iwrpr">
             <div class="zpl_iwrprrgt">
@@ -293,7 +317,6 @@
                         </ul>
 
                         <div id="todoteam_sub">
-                            <!-- <img src="../../images/cmn/custvw.png" alt="" style="    width: 230px;/* right: 26px; */margin: 0 auto 15px;/* top: 0; */    margin-right: 28px;display: block;position: absolute;right: 0;"> -->
                             <img src="../../images/cmn/dropdwn.png" style="width: 300px;border-radius: 5px;margin: 0 0 16px 20px;">
                             <div class="zpl_tblres" style="padding: 0 20px;">
                                 <h1 style="background-color: red; color: #fff; text-align: center; padding: 20px;">This Tab is only visible for managers.</h1>
@@ -600,7 +623,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div data-modal-box="empprofl" class="zpl_mdl zpl_mlg zpl_mcenter">
         <div class="zpl_minr" style="width: 100%;transform: scale(1);margin: auto;max-width: 100%;">
@@ -739,6 +762,38 @@
     </div>
 </div>
 
+<div class="zpl_outer DN" id="mail1">
+    <div class="zpl_topmnu">
+    </div>
+    <div class="zpl_container" id="ask">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt" style="padding: 0;">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <img src="../../images/cmn/mail.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="zpl_outer DN" id="calen1">
+    <div class="zpl_topmnu">
+    </div>
+    <div class="zpl_container" id="ask">
+        <div class="zpl_iwrpr">
+            <div class="zpl_iwrprrgt" style="padding: 0;">
+                <div class="zpl_act">
+                    <div class="zpl_rgtcnt">
+                        <img src="../../images/cmn/calen.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="zpl_outer DN" id="leavelanding1">
     <div class="zpl_topmnu">
 
@@ -840,7 +895,6 @@
             <div class="zpl_iwrprrgt">
                 <div class="zpl_act">
                     <div class="zpl_rgtcnt">
-                        <!-- <h2 style="padding: 24px;background: red;color: #fff;text-align: center;">* Recruit, Vault data will be listed in org level like below *</h2> -->
                         <img src="../../images/cmn/oper.png">
                     </div>
                 </div>
@@ -962,25 +1016,22 @@
         <font>
             <ul>
                 <li>
-                    <a><i class="PI_calen"></i>Apply Leave<i class="PI_fil_askus ylw"></i></a>
+                    <a><i style="background: url(../../images/cmn/log_mail.png);height:18px;width:18px;background-size: 19px;"></i>New Mail<i class="PI_fil_askus ylw"></i></a>
                 </li>
                 <li>
-                    <a><i class="PI_calen"></i>Apply Comp Off<i class="PI_fil_askus ylw"></i></a>
+                    <a><i style="background: url(../../images/cmn/log_con.png);height:18px;width:18px;background-size: 19px;"></i>New Forum post<i class="PI_fil_askus ylw"></i></a>
                 </li>
                 <li>
-                    <a><i class="PI_travel1"></i>Travel Request<i class="PI_fil_askus ylw"></i></a>
+                    <a><i style="background: url(../../images/cmn/log_con.png);height:18px;width:18px;background-size: 19px;"></i>New Announcement<i class="PI_fil_askus ylw"></i></a>
                 </li>
                 <li>
-                    <a><i class="PI_file"></i>Custom Form 2<i class="PI_fil_askus ylw"></i></a>
+                    <a><i style="background: url(../../images/cmn/log_wd.png);height:18px;width:18px;background-size: 19px;"></i>Create Folder<i class="PI_fil_askus ylw"></i></a>
                 </li>
                 <li>
-                    <a><i class="PI_case"></i>Time Log<i class="PI_fil_askus ylw"></i></a>
+                    <a><i style="background: url(../../images/cmn/log_sht.png);height:18px;width:18px;background-size: 19px;"></i>Create Spreadsheet<i class="PI_fil_askus ylw"></i></a>
                 </li>
                 <li>
-                    <a><i class="PI_clock1"></i>Request shift change<i class="PI_fil_askus ylw"></i></a>
-                </li>
-                <li>
-                    <a><i class="PI_training1"></i>Add New Case <i class="PI_fil_askus ylw"></i></a>
+                    <a><i style="background: url(../../images/cmn/log_show.png);height:18px;width:18px;background-size: 19px;"></i>Create Presentation<i class="PI_fil_askus ylw"></i></a>
                 </li>
                 <li>
                     <em onclick="quckact()">View All</em>
@@ -1011,55 +1062,43 @@
         <font>
             <ul>
                 <li>
-                    <p><i class="PI_calen"></i>Leave Tracker</p>
+                    <p><i style="background: url(../../images/cmn/log_mail.png);height:18px;width:18px;background-size: 19px;"></i>Mail</p>
                 </li>
-                <li><a><i class="PI_fil_askus ylw"></i> Apply Leave</a></li>
-                <li><a><i class="PI_star"></i> Custom Form 1</a></li>
-                <li><a><i class="PI_star"></i> Custom Form 2</a></li>
-                <li class="mt">
+                <li><a><i class="PI_star"></i> New Task</a></li>
+                <li><a><i class="PI_fil_askus ylw"></i> New Mail</a></li>
+                <li><a><i class="PI_star"></i> New Note</a></li>
+                <!-- <li class="mt">
                     <p><i class="PI_calen"></i>Attendance</p>
                 </li>
                 <li><a><i class="PI_fil_askus ylw"></i> Apply Comp Off</a></li>
                 <li><a><i class="PI_star"></i> Custom Form 2</a></li>
-                <li><a><i class="PI_fil_askus ylw"></i> Shift Change</a></li>
+                <li><a><i class="PI_fil_askus ylw"></i> Shift Change</a></li> -->
             </ul>
             <ul>
                 <li>
-                    <p><i class="PI_org"></i> Time Tracker</p>
+                    <p><i style="background: url(../../images/cmn/log_con.png);height:18px;width:18px;background-size: 19px;"></i> Connect</p>
                 </li>
-                <li><a><i class="PI_fil_askus ylw"></i> Time Log</a></li>
-                <li><a><i class="PI_star"></i> Custom Form 1</a></li>
-                <li><a><i class="PI_fil_askus ylw"></i> Custom Form 2</a></li>
+                <li><a><i class="PI_fil_askus ylw"></i> New Forum post</a></li>
+                <li><a><i class="PI_star"></i> New conversation</a></li>
+                <li><a><i class="PI_fil_askus ylw"></i> New announcement</a></li>
+                <li><a><i class="PI_star"></i> New poll</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p><i style="background: url(../../images/cmn/log_wd.png);height:18px;width:18px;background-size: 19px;"></i> Workdrive</p>
+                </li>
+                <li><a><i class="PI_fil_askus ylw"></i> Create Folder</a></li>
+                <li><a><i class="PI_star"></i> Upload files</a></li>
                 <li class="mt">
-                    <p><i class="PI_org"></i> Files</p>
+                    <p><i style="background: url(../../images/cmn/log_show.png);height:18px;width:18px;background-size: 19px;"></i> Show</p>
                 </li>
-                <li><a><i class="PI_fil_askus ylw"></i> Add Files</a></li>
-                <li><a><i class="PI_star"></i> Custom Form 1</a></li>
+                <li><a><i class="PI_fil_askus ylw"></i> Create Presentation</a></li>
             </ul>
             <ul>
                 <li>
-                    <p><i class="PI_usr"></i> LMS</p>
+                    <p><i style="background: url(../../images/cmn/log_sht.png);height:18px;width:18px;background-size: 19px;"></i> Sheet</p>
                 </li>
-                <li><a><i class="PI_star"></i> Custom Form 1</a></li>
-                <li><a><i class="PI_star"></i> Custom Form 2</a></li>
-                <!-- <li><a><i class="PI_star"></i> Campaign Access</a></li> -->
-                <li class="mt">
-                    <p><i class="PI_usr"></i> HR Cases</p>
-                </li>
-                <li><a><i class="PI_fil_askus ylw"></i> Add New Case</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <p><i class="PI_Icon_17"></i> Services</p>
-                </li>
-                <li><a><i class="PI_star"></i> Company Policy</a></li>
-                <li><a><i class="PI_star"></i> Training Registration</a></li>
-                <li><a><i class="PI_fil_askus ylw"></i> Travel Request</a></li>
-                <li><a><i class="PI_star"></i> Performance Appraisal</a></li>
-                <li><a><i class="PI_star"></i> Add Task</a></li>
-                <li><a><i class="PI_star"></i> Hall Booking</a></li>
-                <li><a><i class="PI_star"></i> Self Appraisal</a></li>
-                <li><a><i class="PI_star"></i> Projects</a></li>
+                <li><a><i class="PI_fil_askus ylw"></i> Create Spreadsheet</a></li>
             </ul>
         </font>
     </div>
